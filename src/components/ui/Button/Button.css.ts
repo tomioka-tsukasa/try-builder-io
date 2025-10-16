@@ -1,5 +1,5 @@
-import { style, styleVariants } from '@vanilla-extract/css';
-import { colors } from '../../../styles/variables';
+import { style, styleVariants } from '@vanilla-extract/css'
+import { colors } from '../../../styles/variables'
 
 export const button = style({
   display: 'flex',
@@ -15,7 +15,7 @@ export const button = style({
   ':active': {
     opacity: 0.6,
   },
-});
+})
 
 export const buttonSize = styleVariants({
   default: {
@@ -26,14 +26,14 @@ export const buttonSize = styleVariants({
     padding: '20px 24px',
     gap: '20px',
   },
-});
+})
 
 export const label = style({
   display: 'flex',
   alignItems: 'center',
   gap: '10px',
   flex: '1 0 0',
-});
+})
 
 export const labelText = style({
   color: colors.base.white,
@@ -42,7 +42,7 @@ export const labelText = style({
   fontWeight: 700,
   lineHeight: '16px',
   margin: 0,
-});
+})
 
 export const icon = style({
   width: '12px',
@@ -51,4 +51,4 @@ export const icon = style({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'flex-end',
-});
+})

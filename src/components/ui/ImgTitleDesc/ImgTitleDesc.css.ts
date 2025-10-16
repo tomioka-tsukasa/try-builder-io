@@ -1,5 +1,5 @@
-import { style } from '@vanilla-extract/css';
-import { colors } from '../../../styles/variables';
+import { style } from '@vanilla-extract/css'
+import { colors } from '../../../styles/variables'
 
 export const container = style({
   display: 'flex',
@@ -8,34 +8,34 @@ export const container = style({
   overflow: 'hidden',
   width: '100%',
   maxWidth: '270px',
-});
+})
 
 export const containerWhiteBg = style({
   backgroundColor: colors.base.white,
-});
+})
 
 export const image = style({
   width: '100%',
   aspectRatio: '46 / 41',
   objectFit: 'cover',
   borderRadius: '3px 3px 0 0',
-  borderBottom: `1px solid rgba(0, 0, 0, 0.10)`,
+  borderBottom: '1px solid rgba(0, 0, 0, 0.10)',
   display: 'block',
-});
+})
 
 export const inner = style({
   display: 'flex',
   alignItems: 'center',
   gap: '20px',
   padding: '20px',
-});
+})
 
 export const content = style({
   display: 'flex',
   flexDirection: 'column',
   gap: '2px',
   flex: '1 0 0',
-});
+})
 
 export const title = style({
   color: colors.base.black,
@@ -44,7 +44,7 @@ export const title = style({
   fontWeight: 700,
   lineHeight: '19px',
   margin: 0,
-});
+})
 
 export const description = style({
   color: '#515255',
@@ -53,7 +53,7 @@ export const description = style({
   fontWeight: 400,
   lineHeight: '19px',
   margin: 0,
-});
+})
 
 export const icon = style({
   width: '12px',
@@ -62,4 +62,4 @@ export const icon = style({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-});
+})

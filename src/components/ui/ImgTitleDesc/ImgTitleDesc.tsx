@@ -1,5 +1,5 @@
-import React from 'react';
-import * as styles from './ImgTitleDesc.css';
+import React from 'react'
+import * as styles from './ImgTitleDesc.css'
 
 export type ImgTitleDescPattern = 'default' | 'white_bg';
 export type ImgTitleDescIcon = 'arrow' | 'external' | 'none';
@@ -38,7 +38,7 @@ export function ImgTitleDesc({
 }: ImgTitleDescProps): React.ReactElement {
   const containerClass = `${styles.container} ${
     pattern === 'white_bg' ? styles.containerWhiteBg : ''
-  } ${className || ''}`.trim();
+  } ${className || ''}`.trim()
 
   return (
     <div className={containerClass}>
@@ -51,20 +51,20 @@ export function ImgTitleDesc({
         {icon !== 'none' && (
           <div className={styles.icon}>
             {icon === 'arrow' && (
-              <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 12L7 6L0 0L4.76 6L0 12Z" fill="black"/>
+              <svg width='7' height='12' viewBox='0 0 7 12' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M0 12L7 6L0 0L4.76 6L0 12Z' fill='black'/>
               </svg>
             )}
             {icon === 'external' && (
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10 10H2V2H6V0H2C0.89 0 0 0.9 0 2V10C0 11.1 0.89 12 2 12H10C11.1 12 12 11.1 12 10V6H10V10ZM7 0V2H9.59L3.76 7.83L5.17 9.24L11 3.41V6H13V0H7Z" fill="black"/>
+              <svg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M10 10H2V2H6V0H2C0.89 0 0 0.9 0 2V10C0 11.1 0.89 12 2 12H10C11.1 12 12 11.1 12 10V6H10V10ZM7 0V2H9.59L3.76 7.83L5.17 9.24L11 3.41V6H13V0H7Z' fill='black'/>
               </svg>
             )}
           </div>
         )}
       </div>
     </div>
-  );
+  )
 }
 
-export default ImgTitleDesc;
+export default ImgTitleDesc

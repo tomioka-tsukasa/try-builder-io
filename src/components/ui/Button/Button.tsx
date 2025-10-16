@@ -1,5 +1,5 @@
-import React from 'react';
-import * as styles from './Button.css';
+import React from 'react'
+import * as styles from './Button.css'
 
 export type ButtonSize = 'default' | 'large';
 
@@ -30,7 +30,7 @@ export function Button({
   onClick,
   ...props
 }: ButtonProps): React.ReactElement {
-  const buttonClass = `${styles.button} ${styles.buttonSize[size]} ${className || ''}`.trim();
+  const buttonClass = `${styles.button} ${styles.buttonSize[size]} ${className || ''}`.trim()
 
   return (
     <button className={buttonClass} onClick={onClick} {...props}>
@@ -39,13 +39,13 @@ export function Button({
       </div>
       {showIcon && (
         <div className={styles.icon}>
-          <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 12L7 6L0 0L4.76 6L0 12Z" fill="white"/>
+          <svg width='7' height='12' viewBox='0 0 7 12' fill='none' xmlns='http://www.w3.org/2000/svg'>
+            <path d='M0 12L7 6L0 0L4.76 6L0 12Z' fill='white'/>
           </svg>
         </div>
       )}
     </button>
-  );
+  )
 }
 
-export default Button;
+export default Button

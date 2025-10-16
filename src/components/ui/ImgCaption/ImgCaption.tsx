@@ -1,5 +1,5 @@
-import React from 'react';
-import * as styles from './ImgCaption.css';
+import React from 'react'
+import * as styles from './ImgCaption.css'
 
 export interface ImgCaptionProps {
   /** 画像のURL */
@@ -32,7 +32,7 @@ export function ImgCaption({
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default ImgCaption;
+export default ImgCaption

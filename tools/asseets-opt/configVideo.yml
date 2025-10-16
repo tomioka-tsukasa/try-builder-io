@@ -1,0 +1,27 @@
+inputDirectory: './videos-original'
+outputDirectory: '../public/assets/videos'
+formats:
+  mp4:
+    videoBitrate: '4096k'
+    audioBitrate: '128k'
+  h265:
+    videoBitrate: '4096k'
+    audioBitrate: '128k'
+  webm:
+    videoBitrate: '4096k'
+    audioBitrate: '128k'
+includeAudio: false
+audioFrequency: '48k'
+webpQuality: 90
+syncDir: true
+
+individualBitrates:
+  'example-video.mp4':
+    formats:
+      mp4:
+        videoBitrate: '4096k'
+      h265:
+        videoBitrate: '4096k'
+      webm:
+        videoBitrate: '4096k'
+    includeAudio: true

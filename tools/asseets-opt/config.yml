@@ -1,0 +1,8 @@
+inputDirectory: ./images-original
+outputDirectory: ./public/assets/images
+forceOptim: false
+compression:
+  webp: 90
+  avif: 80
+  jpeg: 80
+  png: 80

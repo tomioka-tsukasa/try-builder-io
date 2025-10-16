@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:note.com)",
+      "WebFetch(domain:qiita.com)",
+      "WebFetch(domain:www.figma.com)",
+      "WebFetch(domain:help.figma.com)",
+      "mcp__figma-dev-mode-mcp-server__get_code",
+      "mcp__figma-dev-mode-mcp-server__get_screenshot",
+      "mcp__figma-dev-mode-mcp-server__get_metadata",
+      "mcp__figma-dev-mode-mcp-server__get_code_connect_map",
+      "mcp__figma-dev-mode-mcp-server__get_variable_defs",
+      "Bash(mkdir:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

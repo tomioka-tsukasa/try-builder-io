@@ -1,6 +1,6 @@
 import { style } from '@vanilla-extract/css';
 import { colors } from '../../styles/variables';
-import { SpMqWidth } from '../../styles/responsive.config';
+import { mediaQueries } from '../../styles/responsive.css';
 
 export const container = style({
   padding: '40px 20px',
@@ -14,7 +14,7 @@ export const heading = style({
   marginBottom: '40px',
   color: colors.base.black,
   '@media': {
-    [SpMqWidth]: {
+    [mediaQueries.sp]: {
       fontSize: '24px',
       marginBottom: '30px',
     },
@@ -24,7 +24,7 @@ export const heading = style({
 export const section = style({
   marginBottom: '60px',
   '@media': {
-    [SpMqWidth]: {
+    [mediaQueries.sp]: {
       marginBottom: '40px',
     },
   },
@@ -36,7 +36,7 @@ export const subheading = style({
   marginBottom: '20px',
   color: colors.base.black,
   '@media': {
-    [SpMqWidth]: {
+    [mediaQueries.sp]: {
       fontSize: '18px',
       marginBottom: '15px',
     },
@@ -48,7 +48,7 @@ export const grid = style({
   gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 270px))',
   gap: '20px',
   '@media': {
-    [SpMqWidth]: {
+    [mediaQueries.sp]: {
       gridTemplateColumns: '1fr',
     },
   },
@@ -59,7 +59,7 @@ export const buttonGroup = style({
   flexWrap: 'wrap',
   gap: '20px',
   '@media': {
-    [SpMqWidth]: {
+    [mediaQueries.sp]: {
       flexDirection: 'column',
     },
   },

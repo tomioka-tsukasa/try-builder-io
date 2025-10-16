@@ -1,9 +1,7 @@
 export {
   PcDesignWidth,
-  PcOverDesignWidth,
   TabletDesignWidth,
   SpDesignWidth,
-  DesignRatio,
   PcMqWidthMin,
   PcMqWidthMax,
   PcOverMqWidthMin,

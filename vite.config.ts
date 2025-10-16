@@ -13,7 +13,7 @@ const __dirname = path.dirname(__filename)
 const isDeliveryBuild = process.env.BUILD_TARGET === 'delivery'
 
 // 基本のルート (directory.ts の DM から自動生成)
-const baseRoutes = Object.values(DM).map(path => {
+const baseRoutes = Object.values(DM).map((path: string) => {
   // "/" は空文字列に、"/figma-test-03" は "figma-test-03" に変換
   return path === '/' ? '' : path.slice(1)
 })

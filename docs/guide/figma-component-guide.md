@@ -7,7 +7,7 @@
 
 <!--
 変数定義:
-- DIR_COMMON_COMPONENTS: /src/components/
+- DIR_COMMON_COMPONENTS: /src/components/ui/
 - DIR_PAGE_COMPONENTS: /src/pages/**/components/
 -->
 

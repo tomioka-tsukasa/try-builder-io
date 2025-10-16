@@ -4,12 +4,10 @@ export const BASE_ROOT = '/'
 
 export const SLUGS = {
   TOP: 'top',
-  FIGMA_COMPONENTS: 'figma-components',
 } as const
 
 export const DM = {
   TOP: ROOT,
-  FIGMA_COMPONENTS: `${ROOT}${SLUGS.FIGMA_COMPONENTS}`,
 } as const
 
 export const ROUTES_META = {

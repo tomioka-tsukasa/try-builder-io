@@ -2,7 +2,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from '@/pages/home/Home'
 import { Layout } from '@/layout/Layout'
 import { BASE_ROOT, DM } from '@/store/directory/directory'
-import FigmaComponents from '@/pages/figma-components/FigmaComponents'
 
 export const AppRoutes = () => {
   return <>
@@ -10,7 +9,6 @@ export const AppRoutes = () => {
       <Routes>
         <Route element={<Layout />}>
           <Route path={DM.TOP} element={<Home />} />
-          <Route path={DM.FIGMA_COMPONENTS} element={<FigmaComponents />} />
         </Route>
       </Routes>
     </BrowserRouter>

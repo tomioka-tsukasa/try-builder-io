@@ -1,0 +1,32 @@
+inputDirectory: ./image-original
+outputDirectory: ../../public/assets/images
+forceOptim: false
+
+compression:
+  webp: { quality: 90, effort: 6 }
+  avif: { quality: 80, effort: 9 }
+  jpeg:
+    {
+      quality: 85,
+      progressive: true,
+      chromaSubsampling: '4:4:4',
+      optimizeCoding: true,
+      overshootDeringing: true,
+      trellisQuantisation: true,
+      optimiseScans: true,
+    }
+  png: 
+    progressive: true
+    compressionLevel: 9
+    palette: true
+    quality: 90
+    dither: 1.0
+
+output: { avif: true, webp: true, original: true }
+
+svgoOptions:
+  multipass: true
+  js2svg:
+    indent: 0
+    pretty: false
+  plugins: ['preset-default']
